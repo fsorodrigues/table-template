@@ -1,12 +1,18 @@
-import * as d3 from 'd3';
+// importing d3.js
+import {csv} from 'd3';
 
+// importing stylesheet
 import './style/main.css';
 
-const msg = 'webpack template running';
+// importing components
+import Main from './components/Main';
 
-d3.select('body')
-    .append('div')
-    .append('p')
-    .text(msg);
+// instantiating components
+const main = Main(document.querySelector('.table-wrapper-d3'));
 
-console.log(msg);
+// loading data
+const dataset = csv('./data/disease.csv',d => d);
+
+dataset.then((dataset) => {
+    main(dataset);
+});

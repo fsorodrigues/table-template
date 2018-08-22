@@ -1,4 +1,45 @@
-div {
-    background-color: red;
-    color:white;
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+
+.table-wrapper-d3 table {
+    border-collapse: collapse;
+    font-family: 'Roboto', Verdana, sans-serif;
+    font-size: 0.9rem
+}
+
+.table-wrapper-d3 th {
+    text-align: inherit;
+}
+
+.table-wrapper-d3 .table th,
+.table-wrapper-d3 .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-wrapper-d3 .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-wrapper-d3 .table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
+.table-wrapper-d3 .table .table {
+    background-color: #fff;
+}
+
+.table-wrapper-d3 .table-sm th,
+.table-wrapper-d3 .table-sm td {
+    padding: 0.3rem;
+}
+
+.table-wrapper-d3 .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-wrapper-d3 tfoot {
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.7rem;
 }
